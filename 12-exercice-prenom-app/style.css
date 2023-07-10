@@ -1,0 +1,65 @@
+/*  FOND
+    background: rgb(255, 231, 157); 
+    BOUTON
+    background: midnightblue;
+    h1
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+*/
+
+body{
+    background: rgb(255, 231, 157); 
+}
+/* container ayant le formulaire */
+.container{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+/* Titre  */
+h1{
+    font-size: 45px;
+    color: midnightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+/*style du formulaire  */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pour tous les label et input */
+label,input{
+    margin-top: 25px;
+}
+
+/* label  */
+label{
+    font-weight: bolder;
+    font-size:20px;
+}
+
+/* pour le champs nom - pour la saisie style*/
+#nom{
+    border-color: midnightblue ;
+    height: 50px;
+    width:300px;
+}
+
+/* Style du bouton  */
+#btn{
+    padding:15px;
+    border-radius:12px;
+    width:130px;
+    background: midnightblue;
+    color:rgb(255, 231, 157);
+    font-weight: bolder;
+    cursor:pointer;
+}

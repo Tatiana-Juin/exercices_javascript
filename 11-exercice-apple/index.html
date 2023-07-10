@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Apple</title>
+</head>
+<body>
+
+<section class="global">
+  <!-- HAUT DE LA PAGE POUR LE LOGO + MENU  -->
+    <header>
+      <!-- logo -->
+        <a href="#" class="logo"> <img src="./src/logo.png" alt=""></a>
+        <!-- menu -->
+        <ul>
+            <li>
+              <a href="#">Home </a>
+            </li>
+            <li>
+              <a href="#">Produits</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- contenu -->
+    <div class="content">
+
+      <!-- titre + texte -->
+        <div class="box">
+            <h2>Vos idéss .  sa magie <span>Du génie !</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quo ipsam pariatur quas adipisci corrupti. Consequatur, deserunt! Temporibus voluptates eum at! Esse nulla maiores amet quidem accusamus consequuntur veniam voluptate?</p>
+            <a href="#">Voir le produit</a>
+        </div>
+        <!-- Image principale du produit  -->
+        <div class="box-img">
+          <img class="phone" src="./src/Iphone-03.png" alt="">
+        </div>
+
+    </div>
+
+    <h3>Choisisez votre modèle </h3>
+    <!-- slider pour afficher les image selon la couleur  -->
+    <ul class="cont-imgs">
+        <li> <img src="./src/Iphone-01.png" alt="phone" onclick="slider('./src/Iphone-01.png'); couleur('#9d9d9d')"> </li>
+        <li> <img src="./src/Iphone-02.png" alt="phone" onclick="slider('./src/Iphone-02.png'); couleur('#eef1d5')"> </li>
+        <li> <img src="./src/Iphone-03.png" alt="phone" onclick="slider('./src/Iphone-03.png'); couleur('#e8e8e8')"> </li>
+    </ul>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
