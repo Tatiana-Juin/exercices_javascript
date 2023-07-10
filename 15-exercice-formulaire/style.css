@@ -53,11 +53,13 @@ h1{
     width:150px;
     border: 0.5px solid var(--turquoise);
 }
+/* #connexion {
 
+}
 
+#inscription{
 
-
-
+} */
 /* */
 .active{
     background-color: var(--turquoise);
@@ -72,6 +74,16 @@ form{
     margin-left: 25px;
     margin-right:25px;
     /* margin-top: 15px;    */
+}
+
+/* STYLE POUR LE FORMULAIRE DE CONNEXION*/
+#formConnexion{
+    display: flex;
+}
+
+/* POUR MASQUER LE FORMULAIRE INSCRIPTION */
+#formInscription{
+    display: none;
 }
 
 /* POUR LES BOUTON DU FORMULAIRE*/
@@ -91,16 +103,12 @@ a{
 }
 
 /* STYLE POUR LE LIEN .nomMenbre*/
-.nonMembre{
+#nonMembre{
     margin-top: 10px;
     margin-bottom: 3px;
+    display: block;
+   
 }
-
-/* POUR MASQUER LE FORMULAIRE INSCRIPTION */
-#formInscription{
-    display: none;
-}
-
 /* POUR LES BOUTON #btnConnexion et #btnInscription*/
 #btnConnexion, #btnInscription{
     padding:8px;
