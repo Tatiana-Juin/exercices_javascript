@@ -11,10 +11,43 @@
 
 <body>
 
+    <!-- div du contenu principale -->
+    <main>
+         <div class="container">
+            <!-- Pour afficher le titre soit connexion soit inscription -->
+            <h1></h1>
+            <!-- pour les boutons -->
+            <div class="btns">
+                <input type="button" value="Connexion" id="connexion">
+                <input type="button" value="Inscription" id="inscription">
+            </div>
+            <!-- Formulaire connexion -->
+            <form action="#" method="POST" id="formConnexion">
+                  <input type="email" name="emailConnexion" id="emailConnexion" placeholder="E-mail">
+                  <input type="password" name="mdpConnexion" id="mdpConnexion" placeholder="Mot de passe">
+                  <a href="#" > Mot de passe oublié</a>
+                  <input type="submit" value="Connexion" id="btnConnexion">
+            </form>
+            <p class="nonMembre">Vous êtes pas membre ? <a href="#"> Créer un compte</a></p>
+  
+            <!-- FORMULAIRE INSCRIPTION -->
+  
+              <form action="#" method="POST" id="formInscription">
+                <input type="email" name="emailInscription" id="emailInscription" placeholder="E-mail">
+                <input type="password" name="mdpInscription" id="mdpInscription" placeholder="Mot de passe">
+                <input type="password" name="confirmMdp" id="confirmMdp" placeholder="Confirmer le mot de passe">
+                <input type="submit" value="Inscription" id="btnInscription">
+              </form>
+  
+         </div>
+     
+
+
+    </main>
 
 
 
-
+  <!-- appelle du fichier js  -->
   <script src="app.js"></script>
 </body>
 

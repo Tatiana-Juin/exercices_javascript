@@ -1,0 +1,49 @@
+/* RESET ET DECLARATION DES  VARIABLES*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --turquoise: rgb(74, 203, 205);
+    --blanc: #f1f1f1;
+     --crim: crimson;
+}
+
+body{
+    background-color: var(--turquoise);
+    
+}
+
+/* CONTENU PRINCIPALE - STYLE */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+/* CONTAINER */
+.container{
+    background-color: var(--blanc);
+    width:30%;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+   /*  justify-content: center ;  */
+    
+}
+
+/* POUR LES BOUTON DU HAUT - CONNEXION ET INSCRIPTION*/
+.btns{
+    display: flex;
+    justify-content: center;
+}
+
+/* POUR LE FORMULAIRE*/
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right:25px;
+    /* margin-top: 15px;    */
+}
