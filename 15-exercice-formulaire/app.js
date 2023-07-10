@@ -15,8 +15,8 @@ function funcInscription(){
    titre.innerText="Inscription";
    //supprimer un attribut de connexion
    connexion.removeAttribute("class");
-   //ajouter un attribut a inscription
-   inscription.setAttribute("class","active");
+   //ajouter une class a inscription
+   inscription.classList.add("active");
 
    //changer la valeur d'un attribut
    formConnexion.style.display = "none";
@@ -31,7 +31,7 @@ function funcConnexion(){
     //on supprime la class de inscription afin d'enlever le background-color sur le bouton inscription
     inscription.removeAttribute("class");
     //on ajoute la class active
-    connexion.setAttribute("class","active");
+    connexion.classList.add("active");
 
     //on cache le formulaire inscription
     formInscription.style.display = "none";
