@@ -1,4 +1,4 @@
-/* RESET ET DECLARATION DES  VARIABLES*/
+/* RESET ET DECLARATION DES VARIABLES*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -38,7 +38,7 @@ h1{
     font-weight: 500;
 }
 
-/* POUR LES BOUTON DU HAUT - CONNEXION ET INSCRIPTION*/
+/* STYLE POUR LA DIV CONTENU LES BOUTON CONNEXION ET INSCRIPTION*/
 .btns{
     display: flex;
     justify-content: center;
@@ -46,28 +46,24 @@ h1{
     /* border:0.5px solid var(--turquoise); */
 }
 
+/* STYLE POUR LES BOUTON CONNEXION ET INSCRIPTION */
 .btns input{
     padding:15px;
     border-style: none;
     cursor: pointer;
     width:150px;
     border: 0.5px solid var(--turquoise);
-}
-/* #connexion {
-
+    font-weight: bolder;
 }
 
-#inscription{
-
-} */
-/* */
+/* CLASS POUR CHANGER LE STYLE QUAND UNE PERSONNE ET SUR LE BOUTON  */
 .active{
     background-color: var(--turquoise);
     font-weight: bolder;
     color:var(--blanc);
 }
 
-/* POUR LE FORMULAIRE*/
+/* STYLE POUR LES FORMULAIRES */
 form{
     display: flex;
     flex-direction: column;
@@ -86,6 +82,7 @@ form{
     display: none;
 }
 
+
 /* POUR LES BOUTON DU FORMULAIRE*/
 #emailConnexion,#mdpConnexion,#emailInscription,#mdpInscription,#confirmMdp{
     height:40px;
@@ -102,7 +99,7 @@ a{
     margin-bottom: 10px;
 }
 
-/* STYLE POUR LE LIEN .nomMenbre*/
+/* STYLE POUR LE LIEN #nomMenbre*/
 #nonMembre{
     margin-top: 10px;
     margin-bottom: 3px;
@@ -117,4 +114,10 @@ a{
     color:var(--blanc);
     font-weight: bolder;
     font-size:15px;
+}
+
+/* STYLE POUR LE BOUTON INSCRIPTION*/
+#btnInscription{
+    margin-top:10px;
+    margin-bottom: 10px;
 }
