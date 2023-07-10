@@ -51,18 +51,18 @@ h1{
     border-style: none;
     cursor: pointer;
     width:150px;
-    
+    border: 0.5px solid var(--turquoise);
 }
 
-/* POUR LE BOUTON CONNEXION */
- #connexion{
-    margin-right:15px;
-    color:var(--blanc);
-}
+
+
+
 
 /* */
 .active{
     background-color: var(--turquoise);
+    font-weight: bolder;
+    color:var(--blanc);
 }
 
 /* POUR LE FORMULAIRE*/
@@ -99,4 +99,14 @@ a{
 /* POUR MASQUER LE FORMULAIRE INSCRIPTION */
 #formInscription{
     display: none;
+}
+
+/* POUR LES BOUTON #btnConnexion et #btnInscription*/
+#btnConnexion, #btnInscription{
+    padding:8px;
+    border: 1px solid var(--turquoise);
+    background-color: var(--turquoise);
+    color:var(--blanc);
+    font-weight: bolder;
+    font-size:15px;
 }
