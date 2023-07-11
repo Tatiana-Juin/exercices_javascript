@@ -55,19 +55,25 @@ btnValider.addEventListener("click",(e) =>{
      score.innerText = "score "+ compVrai + "/6";
      info.innerText="Félicitation ";
    }
-   //sinon s''il y a qu'une mauvaise réponse on affiche 1 erreur presque et le fond est rouge 
+   //sinon s''il y a qu'une mauvaise réponse on affiche 1 erreur, le score, presque et le fond est rouge 
    else if(compFaux == 1){
      resultat.style.backgroundColor = "rgb(241, 125, 125)";
      h3.innerText="Il y a " + compFaux + " erreur";
      score.innerText = "score "+ compVrai + "/6";
      info.innerText = "Presque";
    }
-   //sinon si il a plus de 1 mauvaise réponse fond rouge et message oups 
-   else{
+   //sinon s'il a une plus d'une réponse fausse et moins de 6  - affiche le nombre d'erreur,le score, le message oups et le fond est rouge 
+   else if(compFaux > 1 && compFaux <6){
      resultat.style.backgroundColor = "rgb(241, 125, 125)";
      h3.innerText="Il y a " + compFaux + " erreurs";
      score.innerText = "score "+ compVrai + "/6";
      info.innerText = "oups";
+   }
+   else{ // sinon 6 réponse fausse - affiche erreur innatendu innatendu , 0/6, tu as tout faux et le fond est rouge
+     resultat.style.backgroundColor = "rgb(241, 125, 125)";
+     h3.innerText="Erreur innatendu";
+     score.innerText = "score "+ compVrai + "/6";
+     info.innerText = "tu as tout faux ";
    }
   
 })
