@@ -1,0 +1,38 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 192, 112);
+}
+
+h1{
+    font-size:70px;
+    color: #f1f1f1 ;
+    text-align: center;
+    margin: 40px 0px 50px 0px;
+}
+
+form, .resultat{
+    margin: 0 auto;
+    width: 50%;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+input{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 20px;
+
+}
+
+.resultat{
+    display: flex;
+    justify-content: center;
+}
