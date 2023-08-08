@@ -35,6 +35,7 @@ btn3.addEventListener("mouseover",() => {
     btn1.classList.add("flou")
     btn2.classList.add("flou");
 })
+
 //EVENEMENT QUAND LA SOURIS NE SURVOLE PLUS LE BOUTON 3
 btn3.addEventListener("mouseleave",() =>{
     //supprime la class flou
