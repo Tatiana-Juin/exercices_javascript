@@ -36,7 +36,7 @@ function creationCarte(user){
 }
 
 //FONCTION POUR LA RECHERCHE 
-form.addEventListener("submit",(e) =>{
+form.addEventListener("button",(e) =>{
     e.preventDefault();
     if(inp.value.length > 0){
         dataGithub(inp.value);

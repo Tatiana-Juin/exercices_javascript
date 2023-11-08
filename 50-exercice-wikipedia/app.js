@@ -16,13 +16,13 @@ async function dataWikipedia(recherche){
     affichage(data);
 }
 //appelle de la fonction asynchrone fonctionne
-dataWikipedia("github");
+// dataWikipedia("github");
 function affichage(recherche){
     // POUR RECUPERER TOUTES LES REPONSES
     rechercheResult = recherche["query"]['search']
     // BOUCLE POUR AFFICHER LES REPONSES
      for(i = 0; i< rechercheResult.length; i++){
-         console.log(rechercheResult[i]);
+         
         // URL POUR AFFICHER L'ARTICLE    
         const url =  `https://en.wikipedia.org/?curid=${rechercheResult[i].pageid}`;
 
@@ -40,3 +40,13 @@ function affichage(recherche){
         
      }
 }
+
+form.addEventListener("click",(e) =>{
+    e.preventDefault()
+    
+        if(inp.value.length > 0){
+            dataWikipedia(inp.value);
+            inp.value = "";
+        }
+    
+})
