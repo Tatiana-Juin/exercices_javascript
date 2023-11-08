@@ -1,7 +1,7 @@
 //`https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srlimit=20&srsearch=
 
 let erreur = document.querySelector(".erreur");
-let champRecherche = document.querySelector(".champ-recherche");
+let inp = document.querySelector(".champ-recherche");
 let resultat = document.querySelector(".resultat");
 let form = document.querySelector(".recherche");
 
@@ -18,10 +18,25 @@ async function dataWikipedia(recherche){
 //appelle de la fonction asynchrone fonctionne
 dataWikipedia("github");
 function affichage(recherche){
-    // console.log(recherche["query"]['search']);
+    // POUR RECUPERER TOUTES LES REPONSES
     rechercheResult = recherche["query"]['search']
-    // console.log(rechercheResult);
+    // BOUCLE POUR AFFICHER LES REPONSES
      for(i = 0; i< rechercheResult.length; i++){
-        console.log(rechercheResult[i]);
+         console.log(rechercheResult[i]);
+        // URL POUR AFFICHER L'ARTICLE    
+        const url =  `https://en.wikipedia.org/?curid=${rechercheResult[i].pageid}`;
+
+        // CREATION D'UNE NOUVELLE DIV 
+        let nvCard = document.createElement("div");
+        // NOUVELLE CLASS
+         nvCard.className="affichageResult";
+        nvCard.innerHTML=`
+            <h2 class="resultat-titre"> 
+                <a href=${url} target="_blank">${rechercheResult[i].title} </a>
+            </h2>
+            <p> ${rechercheResult[i].snippet} </p>
+        `
+        resultat.appendChild(nvCard);
+        
      }
 }
