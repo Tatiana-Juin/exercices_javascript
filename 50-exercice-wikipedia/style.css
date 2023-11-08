@@ -5,8 +5,16 @@
     padding: 0;
 }
 
+/* div pour le logo */
+.logo{
+    width:20vw;
+    /* border:1px solid blue; */
+    margin: auto;
+}
+
 /*Pour l'image*/
 .logo-wikipedia{
     width:300px;
     height: 300px;
+    
 }
