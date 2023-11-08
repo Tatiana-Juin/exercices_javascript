@@ -1,0 +1,12 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+/*Pour l'image*/
+.logo-wikipedia{
+    width:300px;
+    height: 300px;
+}
