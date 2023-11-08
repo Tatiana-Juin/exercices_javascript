@@ -12,7 +12,16 @@ const API = "https://en.wikipedia.org/w/api.php?action=query&list=search&format=
 async function dataWikipedia(recherche){
     const reponse = await fetch(`${API}${recherche}`);
     const data = await reponse.json();
-    console.log(data);
+    // console.log(data["query"]['search']);
+    affichage(data);
 }
 //appelle de la fonction asynchrone fonctionne
 dataWikipedia("github");
+function affichage(recherche){
+    // console.log(recherche["query"]['search']);
+    rechercheResult = recherche["query"]['search']
+    // console.log(rechercheResult);
+     for(i = 0; i< rechercheResult.length; i++){
+        console.log(rechercheResult[i]);
+     }
+}
