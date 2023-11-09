@@ -1,4 +1,4 @@
-//`https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srlimit=20&srsearch=
+
 
 let erreur = document.querySelector(".erreur");
 let inp = document.querySelector(".champ-recherche");
@@ -8,11 +8,12 @@ let form = document.querySelector(".recherche");
 //appelle de API 
 const API = "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&origin=*&srlimit=20&srsearch=";
 
-//fonction asynchrone pour récuperer plusieurs donnée 
+//fonction asynchrone pour appeller API et récuperer des données
 async function dataWikipedia(recherche){
     const reponse = await fetch(`${API}${recherche}`);
     const data = await reponse.json();
     // console.log(data["query"]['search']);
+    // APPELLE DE LA FONCTION POUR AFFICHAGE 
     affichage(data);
 }
 //appelle de la fonction asynchrone fonctionne
@@ -30,7 +31,7 @@ function affichage(recherche){
         let nvCard = document.createElement("div");
         // NOUVELLE CLASS
          nvCard.className="affichageResult";
-        nvCard.innerHTML=`
+         nvCard.innerHTML=`
             <h2 class="resultat-titre"> 
                 <a href=${url} target="_blank">${rechercheResult[i].title} </a>
             </h2>
@@ -41,12 +42,17 @@ function affichage(recherche){
      }
 }
 
+// FONCTION POUR RECUPERER CE QUI A ETAIT SAISIE 
 form.addEventListener("click",(e) =>{
     e.preventDefault()
     
         if(inp.value.length > 0){
+            
+            // inp.value = "";
+            erreur.textContent="";
+            resultat.textContent="";
             dataWikipedia(inp.value);
-            inp.value = "";
         }
+       
     
 })
