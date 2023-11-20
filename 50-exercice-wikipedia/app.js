@@ -21,6 +21,7 @@ async function dataWikipedia(recherche){
 function affichage(recherche){
     // POUR RECUPERER TOUTES LES REPONSES
     rechercheResult = recherche["query"]['search']
+    // console.log(rechercheResult);
     // BOUCLE POUR AFFICHER LES REPONSES
      for(i = 0; i< rechercheResult.length; i++){
          

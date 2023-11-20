@@ -58,6 +58,16 @@ h1{
 }
 
 /* Pour afficher les resultat */
-.affichageResult{
+.resultat{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
 
+.affichageResult{
+    
+    /* flex: 1 1 160px; */
+    width:200px;
+    margin-left:20px;
 }
