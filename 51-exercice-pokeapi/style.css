@@ -16,15 +16,24 @@ h1{
     font-size: 50px;
 }
 
-/* SEARCH */
+/* FORM */
 form{
     margin-top: 40px;
     display: flex;
     justify-content: center;
     border:none;
+    margin-bottom:30px;
 }
+/* SEACH */
 #search{
     padding:15px;
     width:400px;
 }
 
+/* CARD DU POKEMON */
+.card-pokemon{
+    /* border:1px solid black;  */
+    width:30vw; 
+    margin:auto;
+    /* height:50vh; */
+}
