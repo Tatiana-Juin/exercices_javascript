@@ -54,6 +54,10 @@ function affichage(name) {
         // console.log(nameStat);
         let statistic = name["stats"][j].base_stat;
         // console.log(statistic);
+        let paraStat = document.createElement("p");
+        paraStat.setAttribute("class","stat-pokemon");
+        paraStat.innerHTML = `${name["stats"][j]["stat"].name} ${name["stats"][j].base_stat}`
+        card.appendChild(paraStat);
     }
  }
 
