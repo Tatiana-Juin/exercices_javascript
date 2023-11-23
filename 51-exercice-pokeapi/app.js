@@ -35,10 +35,10 @@ function affichage(name) {
     card.appendChild(h2);
 
     // id
-    let paraId = document.createElement("p");
-    paraId.innerText = name["id"];
-    paraId.setAttribute("class","id-pokemon")
-    card.appendChild(paraId);
+    // let paraId = document.createElement("p");
+    // paraId.innerText = name["id"];
+    // paraId.setAttribute("class","id-pokemon")
+    // card.appendChild(paraId);
 
     // boucle pour récupérer le type 
     for (let i = 0; i< name["types"].length;i++){
@@ -59,7 +59,7 @@ function affichage(name) {
         // console.log(statistic);
         let paraStat = document.createElement("p");
         paraStat.setAttribute("class","stat-pokemon");
-        paraStat.innerHTML = `${name["stats"][j]["stat"].name} ${name["stats"][j].base_stat}`
+        paraStat.innerHTML = `${name["stats"][j]["stat"].name} :  ${name["stats"][j].base_stat}`
         card.appendChild(paraStat);
     }
  }

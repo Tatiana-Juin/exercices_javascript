@@ -36,4 +36,32 @@ form{
     width:30vw; 
     margin:auto;
     /* height:50vh; */
+    background-color:white;
+    border-radius : 30px;
 }
+
+.card-img-pokemon{
+    /* border : 1px solid blue; */
+    width:7vw;
+    margin:auto;
+    /* height:80px; */
+    
+}
+
+
+/* STYLE POUR LE NOM DU POKEMON*/
+.name-pokemon{
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;
+    /* margin-bottom: 30px; */
+}
+
+.type-pokemon, .stat-pokemon{
+    margin-left : 40px;
+    /* margin-bottom:20px; */
+    /* text-align: center; */
+    text-transform: capitalize;
+    padding:8px;;
+}
+
