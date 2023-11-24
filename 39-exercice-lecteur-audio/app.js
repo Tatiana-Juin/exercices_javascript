@@ -27,7 +27,26 @@ const listeAudio = [
 // POUR LE BOUTON PRECEDENT 
 precedent.addEventListener("click",() =>{
     
-    console.log(audio);
-   
+    // console.log(audio.src);
+    let audioSrc = audio.src;
+    // if(audioSrc==="http://127.0.0.1:5500/39-exercice-lecteur-audio/src/audio-2.mp3") {
+
+    //     audioSrc="";
+    //     audioSrc = "http://127.0.0.1:5500/39-exercice-lecteur-audio/src/audio-1.mp3";
+    //     console.log(audioSrc);
+
+    // } else{
+    //     if(audioSrc==="http://127.0.0.1:5500/39-exercice-lecteur-audio/src/audio-1.mp3"){
+    //         audioSrc="";
+    //         audioSrc = "http://127.0.0.1:5500/39-exercice-lecteur-audio/src/audio-3.mp3";
+    //         console.log(audioSrc);
+    //     }
+    //     else{
+    //         console.log(audioSrc); 
+    //     }
+    // }
+    
+
+  
 })
 
