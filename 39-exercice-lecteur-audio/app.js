@@ -4,98 +4,91 @@ let audio = document.querySelector("audio");
 let precedent = document.querySelector(".precedent");
 let play = document.querySelector(".play");
 let suivant = document.querySelector(".suivant");
+let icon = document.querySelector(".play ion-icon")
 
-// const listeAudio = [
-//     {
-//         nom :'Instrumentale 1',
-//         src : 'src/audio-1.mp3'
-//     },
-//     {
-//         nom :'Instrumentale 2',
-//         src : 'src/audio-2.mp3'
-//     },
-//     {
-//         nom :'Instrumentale 3',
-//         src : 'src/audio-3.mp3'
-//     },
-//     {
-//         nom :'Instrumentale 4',
-//         src : 'src/audio-4.mp3'
-//     }
-// ]
+// BOOLEEN AFIN DE SAVOIR SI LA MUSIC FONCTIONNE OU ET EN PAUSE false => pause
+let musicPlay = false;
 
-// POUR LE BOUTON PRECEDENT 
-// precedent.addEventListener("click",() =>{
-    
-    // console.log(audio.src);
-    // let audioSrc = audio.src;
-    // if(audioSrc==="http://127.0.0.1:5500/39-exercice-lecteur-audio/src/audio-2.mp3") {
+//FONCTION funcPause QUI PERMET DE METTRE EN PAUSE LA MUSIC 
+function funcPause(){
+    // assigne la valeur false à la variable musicPlay car il n'y a pas de music 
+    musicPlay=false;
+    // mettre en pause la music 
+    audio.pause();
+    // changer d'icon
+    icon.setAttribute("name","play-circle-outline");
+}
 
-    //     audioSrc="";
-    //     audioSrc = "http://127.0.0.1:5500/39-exercice-lecteur-audio/src/audio-1.mp3";
-    //     console.log(audioSrc);
 
-    // } else{
-    //     if(audioSrc==="http://127.0.0.1:5500/39-exercice-lecteur-audio/src/audio-1.mp3"){
-    //         audioSrc="";
-    //         audioSrc = "http://127.0.0.1:5500/39-exercice-lecteur-audio/src/audio-3.mp3";
-    //         console.log(audioSrc);
-    //     }
-    //     else{
-    //         console.log(audioSrc); 
-    //     }
-    // }
-    
+// FONCTION POUR LANCER LA CHANSON
+function funcPlay(){
+    // assigne true car il y à de la music 
+    musicPlay=true;
+    // lancer la chanson
+    audio.play();
+    // changer d'icon
+    icon.setAttribute("name","pause-outline");
+}
 
-  
-// })
+// QUAND ON CLIC SUR LE BOUTON PLAY
+play.addEventListener("click",()=>{
+    // si la music est en cours alors 
+    if(musicPlay === true){
+        // appelle la fonctionpause
+        funcPause()
+    }
+    else{ 
+        // appelle la fonction play
+        funcPlay();
+    }
+});
 
-// initialisation de comptPred pour afficher les audio de manière décroissant
+// LA VARIABLE comptePred EST INITAILISER
 let comptePred = 5;
 
-// fonction pour mettre la chanson précédente
+// FONCTION POUR METTRE LA CHANSON PRECEDENTE
 function funcPrecedent(){
-    // console.log("précédent"); 
+    // quand on clique on enleve un qui est le numero de la chanson
     comptePred --;
+    // pour faire defiler les chanson
     audio.setAttribute("src","src/audio-"+comptePred+".mp3");
+    // pour changer le titre
     titre.innerText="";
     titre.innerText=`Instrumental ${comptePred}`;
+    // quand on arrive à la premère chanson on initialise  à 5
     if(comptePred === 1){
         comptePred = 5;
     }
-    console.log(audio);
+    // appelle de la fonction funcPlay
+    funcPlay()
     // console.log(titre);
 }
-// evenement au click sur le bouton précédent 
+// QUAND ON CLIQUE SUR LE BTN PRECEDENT 
 precedent.addEventListener("click",funcPrecedent);
 
 
 
-// initialisation de compteSuivant pour afficher les audio de manière incrementer
+// LA VARIABLE comptePred EST INITAILISER
 let compteSuivant = 1;
-// fonction pour mettre la chanson suivante
+
+// FONCTION POUR METTRE LA CHANSON SUIVANTE 
 function funcSuivant(){
-    // console.log("suivant");
+    // numéro de la chanson
     compteSuivant ++;
+    // changer de chanson 
     audio.setAttribute("src","src/audio-"+compteSuivant+".mp3");
+    // changer le titre 
     titre.innerText="";
     titre.innerText=`Instrumental ${compteSuivant}`;
-
+    // si on arrive a la quatrieme chanson on passe redefinie une valeur a compteSuivant qui est de 0
     if(compteSuivant===4){
         compteSuivant=0;
     }
-    console.log(audio);
-    // console.log(titre);
+   
+    // APPELLE DE LA FONCTION funcPlay
+    funcPlay()
     
 }
 // evenement au click sur le bouton suivant 
 suivant.addEventListener("click",funcSuivant);
 
-// fonction permettant de lancer la chanson et de la mettre en pause
-function funcPlay(){
-
-    console.log("en marche ");
-
-}
-// evenement au click qui appelle la fonction funcPlay
-play.addEventListener("click",funcPlay);
