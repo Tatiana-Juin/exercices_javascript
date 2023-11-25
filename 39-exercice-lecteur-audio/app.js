@@ -6,7 +6,7 @@ let play = document.querySelector(".play");
 let suivant = document.querySelector(".suivant");
 let icon = document.querySelector(".play ion-icon")
 
-// BOOLEEN AFIN DE SAVOIR SI LA MUSIC FONCTIONNE OU ET EN PAUSE false => pause
+// VARIABLE BOOLEEN AFIN DE SAVOIR S'IL Y A  OU SI ELLE EST EN PAUSE false => pause
 let musicPlay = false;
 
 //FONCTION funcPause QUI PERMET DE METTRE EN PAUSE LA MUSIC 
@@ -55,7 +55,7 @@ function funcPrecedent(){
     // pour changer le titre
     titre.innerText="";
     titre.innerText=`Instrumental ${comptePred}`;
-    // quand on arrive à la premère chanson on initialise  à 5
+    // quand on arrive à la premère chanson on redefinie la variable  à 5
     if(comptePred === 1){
         comptePred = 5;
     }
@@ -89,6 +89,6 @@ function funcSuivant(){
     funcPlay()
     
 }
-// evenement au click sur le bouton suivant 
+// QUAND ON CLIQUE SUR LE BTN SUIVANT 
 suivant.addEventListener("click",funcSuivant);
 
