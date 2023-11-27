@@ -1,0 +1,36 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* COULEUR DE FOND DE LA PAGE  */
+body{
+    background-color: #FAD98C;
+}
+
+main{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    min-height:50vh;
+}
+
+.chrono{
+    /* margin-top: 30px; */
+    width:50vw;
+    /* height:10vh; */
+    background-color: #333;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+
+}
+
+.titrePage, .temps{
+    padding:15px;
+    color:white;
+    text-align: center;
+    font-weight: bolder;
+    font-size:40px;
+}
