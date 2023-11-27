@@ -21,8 +21,15 @@ main{
 
 /* STYLE DE L'HORLOGE */
 .horloge{
-    width:50vw;
-    height:50vh;
-    /* border:1px solid white; */
+    width:30vw;
+    
     background-color: white;
+}
+
+/* STYLE POUR AFFICHER L'HEURE   */
+.heure{
+    text-align: center;
+    font-size: 60px;
+    margin-top:30px;
+    margin-bottom: 30px;
 }
