@@ -53,9 +53,20 @@ button{
     margin-right: 10px;
     cursor: pointer;
 }
+
+/* STYLE QUAND ON SURVOLE UN BOUTON */
+button:hover,button:active{
+    background-color: #46427B;
+}
+
+/* STYLE QUAND ON CLIQUE SUR UN BOUTON  */
+/* button:active{
+    background-color: #46427B;
+} */
+
 /* STYLE POUR LES ICONS DU BOUTON  */
 button ion-icon{
-    padding:15px;
+    padding:20px;
     color:white;
     
 }
