@@ -55,7 +55,7 @@ button{
 }
 
 /* STYLE QUAND ON SURVOLE UN BOUTON */
-button:hover,button:active{
+button:hover{
     background-color: #46427B;
 }
 
