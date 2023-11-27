@@ -55,14 +55,9 @@ button{
 }
 
 /* STYLE QUAND ON SURVOLE UN BOUTON */
-button:hover{
+button:hover, .active{
     background-color: #46427B;
 }
-
-/* STYLE QUAND ON CLIQUE SUR UN BOUTON  */
-/* button:active{
-    background-color: #46427B;
-} */
 
 /* STYLE POUR LES ICONS DU BOUTON  */
 button ion-icon{
