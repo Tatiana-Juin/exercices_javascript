@@ -1,0 +1,28 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* POUR TOUTE LA PAGE  */
+body{
+    background-color: #000000;
+}
+
+/* STYLE POUR LE CONTENUS  */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* STYLE DE L'HORLOGE */
+.horloge{
+    width:50vw;
+    height:50vh;
+    /* border:1px solid white; */
+    background-color: white;
+}
