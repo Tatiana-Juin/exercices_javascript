@@ -9,7 +9,7 @@
 body{
     background-color: #FAD98C;
 }
-
+/* STYLE POUR TOUS LE ECONTENUS  */
 main{
     display: flex;
     flex-direction:column;
@@ -17,7 +17,7 @@ main{
     justify-content: center;
     min-height:50vh;
 }
-
+/* STYLE POUR LA DIV CHRONO */
 .chrono{
     /* margin-top: 30px; */
     width:50vw;
@@ -26,11 +26,36 @@ main{
     box-shadow: 0 5px 5px rgba(0,0,0,.2);
 
 }
-
+/* STYLE POUR LE TITRE DE LA PAGE ET L'AFFICHAGE DU CHRONO */
 .titrePage, .temps{
     padding:15px;
     color:white;
     text-align: center;
     font-weight: bolder;
     font-size:40px;
+}
+
+/* STYLE POUR TOUS LES ELEMENTS BTN  */
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:50vw;
+    /* border:1px solid blue; */
+    margin-top:40px;
+}
+
+/* STYLE POUR TOUS LES BOUTONS */
+button{
+    border:none;
+    background-color: #B7A38B;
+    font-size:50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* STYLE POUR LES ICONS DU BOUTON  */
+button ion-icon{
+    padding:15px;
+    color:white;
+    
 }
