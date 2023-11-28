@@ -33,10 +33,12 @@ for(let i = 0; i< carte.length;i++){
         }
 
 
-
+       /* ********  PARTIE POUR FAIRE LA COMPARAISON DE DEUX CARTE ************** */
+        // Si le compteur  est égale a 0
         if(compteur === 0){
-            // premiereCarte = carte[i];
+            // dans permiereCarte on récupére la valeur du src
             premiereCarte = img[i].getAttribute("src");
+            // incremente le compteur 
             compteur++;
             // console.log(compteur);
 
@@ -45,18 +47,26 @@ for(let i = 0; i< carte.length;i++){
             // return;
 
         }else{
+            // si le compteur est egale a 1
             if(compteur ===1){
-                // secondeCarte = carte[i];
+
+                // dans secondeCarte on récupére la valeur du src de l'image 
                 secondeCarte = img[i].getAttribute("src"); 
+                // incremente le compteur
                 compteur++;
 
+                // COMPARAISON DES DEUX CARTES 
                 if(premiereCarte === secondeCarte){
-                    console.log("retourner");
+                    console.log("identique");
+                    // premiereCarte.removeEventListener('click')
+                    // secondeCarte.removeEventListener('click', () =>{})
                     // console.log(carte[i]);
                     // console.log(compteur);
                     // console.log(premiereCarte);
                     // console.log(secondeCarte);
+                    
                 }
+                // on initalise compteur a 0
                 compteur = 0;
                 // console.log(compteur);
             }
