@@ -5,3 +5,45 @@
     padding: 0;
 }
 
+/* contenue principale */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* POUR CREER LE STYLE DE CHAQUE CARTE */
+.carte{
+    border: 1px solid black;
+    width:300px;
+    min-height:300px;
+}
+
+/* On fait disparaitre l'image */
+.face{
+    display: none;
+}
+
+/* Pour les images */
+.face img{
+    width:280px;
+    height:280px;
+}
+
+/* Style pour les carte arriére  */
+.arriere{
+    width:300px;
+    min-height:300px;
+    /* background-color: black; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    /* display: none; */
+}
+
+/* Pour afficher les ? sur la face arriere */
+.arriere p{
+    text-align:center;
+    font-size:100px;
+}
