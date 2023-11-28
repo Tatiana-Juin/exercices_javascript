@@ -14,18 +14,6 @@ let compteur = 0;
 for(let i = 0; i< carte.length;i++){
     carte[i].addEventListener("click", () =>{
 
-        // premiereCarte = carte[i];
-        if(compteur === 0){
-            premiereCarte = carte[i];
-            compteur++; 
-            // console.log(premiereCarte);
-        }
-        else{
-            secondeCarte = carte[i]; 
-            compteur++;
-            // console.log(secondeCarte);
-        }
-
         // POUR RECUPERER LA VALEUR DE DISPLAY
         let styleArriere = window.getComputedStyle(arriere[i]).display
         // let styleFace = window.getComputedStyle(face[i]).display
@@ -44,53 +32,30 @@ for(let i = 0; i< carte.length;i++){
             face[i].style.display="none";
         }
 
-        // console.log(img[i].getAttribute("src"));
-        // let imgSrc = img[i].getAttribute("src");
-        
-        // console.log(premiereCarte);
-        // console.log(secondeCarte);
-        
-        /* 
-            IL FAUT CREER UE VARIABLE BOOLEAN DES QUE TU INITIALISE A TRUE
-            MODIFIER LA CONDITION 
-            let boolMaxDeuxCarte = true;
-             if(compteur === 0){
-            premiereCarte = carte[i];
+
+        //  POUR QUEE DEUX IMAGE SOIT IDENTIQUE ET QUELLE SE BLOQUE 
+         if(compteur === 0){
+            premiereCarte = img[i].getAttribute("src");
+            
             compteur++; 
-            // console.log(premiereCarte);
+            console.log(`1er carte ${premiereCarte}`);
         }
         else{
             if(compteur ===1){
-            secondeCarte = carte[i]; 
-            compteur++;
-            // console.log(secondeCarte);
+                secondeCarte = img[i].getAttribute("src"); 
+                compteur++;
+                console.log(`seconde carte ${secondeCarte}`);
             }
-            else{
-                boolMaxDeuxCarte = false;
+            else{ //différent de 1
+            //    SI arriere est différent de flex  
+                if(arriere[i].getAttribute("display") != "flex"){
+                    compteur =0;
+                    console.log(`arriere ${compteur}`);
+                }
             }
+           
         }
 
-         if(compteur == 1){
-            if(premiereCarte.getAttribute("src") == secondeCarte.getAttribute("src")){
-                console.log("identique");
-            }
-            else{
-                console.log("non identiquen");
-            }
-           
-        }
-        */
-        if(compteur == 2){
-            if(premiereCarte.getAttribute("src") === secondeCarte.getAttribute("src")){
-                console.log("identique");
-                // compteur =0;
-            }
-            else{
-                console.log("non identiquen");
-            }
-           
-        }
-        
         
     });
 }
