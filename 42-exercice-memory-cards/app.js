@@ -9,10 +9,12 @@ let premiereCarte;
 let secondeCarte;
 let compteur = 0;
 
+let couleurCarte1, couleurCarte2;
+
 
 // BOUCLE POUR DECLENCHER UN EVENEMENT QUAND TU CLICK SUR UNE CARTE 
 for(let i = 0; i< carte.length;i++){
-    carte[i].addEventListener("click", () =>{
+    carte[i].addEventListener("click", () => {
 
         // POUR RECUPERER LA VALEUR DE DISPLAY
         let styleArriere = window.getComputedStyle(arriere[i]).display
@@ -38,6 +40,7 @@ for(let i = 0; i< carte.length;i++){
         if(compteur === 0){
             // dans permiereCarte on récupére la valeur du src
             premiereCarte = img[i].getAttribute("src");
+            couleurCarte1 = carte[i]
             // incremente le compteur 
             compteur++;
             // console.log(compteur);
@@ -54,26 +57,24 @@ for(let i = 0; i< carte.length;i++){
                 secondeCarte = img[i].getAttribute("src"); 
                 // incremente le compteur
                 compteur++;
-
+                couleurCarte2 = carte[i];
                 // COMPARAISON DES DEUX CARTES 
                 if(premiereCarte === secondeCarte){
                     console.log("identique");
-                    // premiereCarte.removeEventListener('click')
-                    // secondeCarte.removeEventListener('click', () =>{})
-                    // console.log(carte[i]);
-                    // console.log(compteur);
-                    // console.log(premiereCarte);
-                    // console.log(secondeCarte);
-                    
+                    // J'ai ajouter la couleur quand c'est bon
+                    couleurCarte1.style.backgroundColor="green";
+                    couleurCarte2.style.backgroundColor="green";
                 }
                 // on initalise compteur a 0
                 compteur = 0;
+                couleurCarte1 = "";
+                couleurCarte2="";
                 // console.log(compteur);
             }
         }
         // console.log(`dehors de la fonction ${compteur}`);
         
-        
+        // funcCarte()
        
     });
 }
