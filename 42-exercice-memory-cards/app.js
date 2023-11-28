@@ -33,30 +33,38 @@ for(let i = 0; i< carte.length;i++){
         }
 
 
-        //  POUR QUEE DEUX IMAGE SOIT IDENTIQUE ET QUELLE SE BLOQUE 
-         if(compteur === 0){
+
+        if(compteur === 0){
+            // premiereCarte = carte[i];
             premiereCarte = img[i].getAttribute("src");
-            
-            compteur++; 
-            console.log(`1er carte ${premiereCarte}`);
-        }
-        else{
+            compteur++;
+            // console.log(compteur);
+
+            // console.log(premiereCarte);
+           
+            // return;
+
+        }else{
             if(compteur ===1){
+                // secondeCarte = carte[i];
                 secondeCarte = img[i].getAttribute("src"); 
                 compteur++;
-                console.log(`seconde carte ${secondeCarte}`);
-            }
-            else{ //différent de 1
-            //    SI arriere est différent de flex  
-                if(arriere[i].getAttribute("display") != "flex"){
-                    compteur =0;
-                    console.log(`arriere ${compteur}`);
-                }
-            }
-           
-        }
 
+                if(premiereCarte === secondeCarte){
+                    console.log("retourner");
+                    // console.log(carte[i]);
+                    // console.log(compteur);
+                    // console.log(premiereCarte);
+                    // console.log(secondeCarte);
+                }
+                compteur = 0;
+                // console.log(compteur);
+            }
+        }
+        // console.log(`dehors de la fonction ${compteur}`);
         
+        
+       
     });
 }
 
