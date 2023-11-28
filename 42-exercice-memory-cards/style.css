@@ -18,6 +18,7 @@ main{
     border: 1px solid black;
     width:300px;
     min-height:300px;
+    cursor: pointer;
 }
 
 /* On fait disparaitre l'image */
