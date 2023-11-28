@@ -1,6 +1,6 @@
 # Idée pour résoudre le PB 
 
-## Pour retourner une carte 
+## Pour retourner une carte REUSSI
 Quand on click sur une carte l'arrière disparait 
 On ajouter display : none; a .arriere
 et la face avant apparait et change la valeur de display en block 
