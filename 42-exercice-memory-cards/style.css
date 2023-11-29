@@ -45,7 +45,7 @@ main{
     
 }
 
-/* Pour afficher les ? sur la face arriere */
+/* Pour afficher les point d'interrogation  sur la face arriere */
 .arriere p{
     text-align:center;
     font-size:100px;
