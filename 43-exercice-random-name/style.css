@@ -1,0 +1,62 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* TOUTE LA PAGE  */
+body{
+    background-color: #FBBD5B;
+}
+
+/* CONTENUS PRINCIPALE  */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:10vh;
+    margin-top: 15px;
+}
+
+/* STYLE POUR LA DIV   */
+.tirage{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:50vw;
+    /* border:1px solid red; */
+}
+
+/* POUR IMAGE */
+.tirage img{
+    width:200px;
+    height:200px;
+    
+}
+
+/* POUR LE TITRE DE LA PAGE */
+h1{
+    font-size:60px;
+    color:rgb(138, 4, 8);
+    margin-bottom: 20px;
+}
+
+.btn{
+   background-color: #333333; 
+   color:white;
+   font-weight: bolder;
+   width:300px;
+   font-size: 30px;
+   cursor: pointer;
+   padding:20px;
+   box-shadow: 0 5px 5px rgba(0,0,0,.2);
+   border-radius:15px;
+   border:none;
+
+}
+
+.btn:hover{
+    background-color: rgb(138, 4, 8); 
+    border:none;
+}
