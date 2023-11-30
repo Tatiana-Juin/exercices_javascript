@@ -41,7 +41,7 @@ function funcResultat(){
 
     // CONVERSION POUR LES KILOMETRE 
     if (valeurUniteConv==="Centimetre" && valeurUniteResult==="Metre"){
-        resultat.value = Number(input.value) * 0,00001;
+        resultat.value = Number(input.value) * 0.00001;
         
     }else if(valeurUniteConv==="Centimetre" && valeurUniteResult==="Kilometre"){
         resultat.value = Number(input.value) * 0.01;
