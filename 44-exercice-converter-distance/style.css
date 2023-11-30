@@ -31,6 +31,7 @@ main{
     padding:20px;
     box-shadow: 0 5px 5px rgba(0,0,0,.3);
     border-radius :15px;
+    height:200px;
     
 }
 
@@ -40,6 +41,35 @@ h1{
     margin-bottom: 20px;;
 }
 
+/* INPUT DU GROUPE */
+.input-groupe{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:500px;
+}
 
+/* POUR LE CHAMP DE TEXTE */
+input{
+    height:25px;
+    text-align:center;
+}
+
+/* POUR LA DIV CONTENANT TOUTES LES UNITES  */
+.select-groupe{
+    margin-top: 20px;;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    width:500px;
+}
+
+/* STYLE POUR LES DEUX DIV AYANT L'ID SUIVANT  */
+#unite, #resultatUnite{
+    color: #F46A6A;
+    font-weight: bolder;
+    padding:7px;
+}
 
 
