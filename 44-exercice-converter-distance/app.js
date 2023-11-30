@@ -14,7 +14,14 @@ let uniteResultat = document.querySelector("#resultatUnite");
 
     100 centimetre = 1kilometre 
 
-
-
 */
 
+function resultat(){
+    
+}
+// APPELLE DE LA FONCTION QUAND ON SAISI UN NB ET QU'ON APPUYE SUR ENTRE
+inpConvertir.addEventListener("keyup", resultat);
+// APPELLE DE LA FONCTION QUAND ON CHANGE D'UNITE POUR LA CONVERSION
+uniteConvertir.addEventListener("change",resultat);
+// APPELLE DE LA FONCTION QUAND ON CHANGE L'UNITE DU RESULTAT
+uniteResultat.addEventListener("change",resultat);
