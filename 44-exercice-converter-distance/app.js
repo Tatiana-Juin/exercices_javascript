@@ -6,8 +6,8 @@ let uniteConvertir = document.querySelector("#unite");
 let uniteResultat = document.querySelector("#resultatUnite");
 
 
-let valeurUniteConv = uniteConvertir.value;
-let valeurUniteResult = uniteResultat.value;
+// let valeurUniteConv = uniteConvertir.value;
+// let valeurUniteResult = uniteResultat.value;
 
 function funcResultat(){
     
