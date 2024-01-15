@@ -3,7 +3,7 @@ function slider(anything){
     document.querySelector(".phone").src = anything;
 }
 
-//blockscope porté
+//Pour changer la couleur
 function couleur(color){
     const sec = document.querySelector('.global');
     sec.style.background = color;
