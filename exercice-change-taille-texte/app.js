@@ -13,7 +13,6 @@ plus.addEventListener("click", () =>{
    //convertir en nb 
    let tailleNb = parseInt(tailleActuelle);
   
-  
    //addition - calcule pour changer la taille de +1
    let tailleCalcule = tailleNb +1;
    
@@ -22,6 +21,7 @@ plus.addEventListener("click", () =>{
    
    //affichage du texte par rapport 
    taille.innerText = "Taille actuelle : "+ tailleFinale+"px";
+   
    //pour changer le style du texte du lorem
    texteChanger.style.fontSize = tailleFinale+"px";
    
