@@ -5,7 +5,7 @@ let btn = document.querySelector("#btn");
 
 // EVENEMENT AU CLICK
 btn.addEventListener("click",() =>{
-  //  recupére la valeur
+  //  recupére la valeur du nom
     valeur = nom.value;
     // Pour l'affichage
    if(valeur.trim() ==""){
